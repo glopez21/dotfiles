@@ -30,3 +30,7 @@ return {
         require("telescope").load_extension("ui-select")
     end,
 }
+
+-- References: 
+-- https://github.com/nvim-telescope/telescope-ui-select.nvim
+
