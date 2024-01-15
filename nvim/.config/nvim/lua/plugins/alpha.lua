@@ -17,11 +17,11 @@ return {
 	   	}
 
 	   	dashboard.section.buttons.val = {
-			-- dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+			dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
 			-- dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
 			-- dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 			-- dashboard.button("d", "✗  Delete session", "<cmd>SessionsManager delete_session<CR>"),
-			dashboard.button("s", "  Sessions", "<cmd>SessionManager load_session<CR>"),
+			-- dashboard.button("s", "  Sessions", "<cmd>SessionManager load_session<CR>"),
 			dashboard.button("r", "  Recent", ":Telescope oldfiles <CR>"),
 			dashboard.button("f", "  Find", ":Telescope find_files <CR>"),
 			dashboard.button("c", "  Config", ":e $MYVIMRC <CR>"),
