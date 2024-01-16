@@ -3,7 +3,7 @@ return {
         'akinsho/bufferline.nvim', version = "*",
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         config = function()
-            vim.opt.termguicolors = true
+            -- vim.opt.termguicolors = true
             local builtin = require("bufferline").setup{
                 options = {
                     numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,

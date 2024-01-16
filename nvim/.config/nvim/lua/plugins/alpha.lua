@@ -5,6 +5,8 @@ return {
 	config = function()
 		local alpha = require("alpha")
 		local dashboard = require("alpha.themes.dashboard")
+		-- local dashboard = require("alpha.themes.startify'.config") 
+
 		dashboard.section.header.val = {
 			[[                                                    ]],
 			[[ ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ]],
@@ -30,61 +32,20 @@ return {
 	   }
 	   
 			local function footer()
-			-- NOTE: requires the fortune-mod package to work
-				-- local handle = io.popen("fortune")
-				-- local fortune = handle:read("*a")
-				-- handle:close()
-				-- return fortune
-				return ""
+				return "Haskell can suck mo' nads YUT YUT!!"
 			end
 	   
 	   dashboard.section.footer.val = footer()
 	   
-	   dashboard.section.footer.opts.hl = "Type"
-	   dashboard.section.header.opts.hl = "Include"
-	   dashboard.section.buttons.opts.hl = "Keyword"
+	--    dashboard.section.footer.opts.hl = "Type"
+	--    dashboard.section.header.opts.hl = "Include"
+	--    dashboard.section.buttons.opts.hl = "Keyword"
 	   
-	   dashboard.opts.opts.noautocmd = true
-	   -- vim.cmd([[autocmd User AlphaReady echo 'ready']])
+	--    dashboard.opts.opts.noautocmd = true
 	   alpha.setup(dashboard.opts)
 
 	
 	end,
-
+	-- references:
+	-- https://github.com/benbrastmckie/.config/tree/master/nvim/lua/user
 }
-
--- dashboard.section.header.val = {
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- 	[[                                                                     ]],
--- 	[[       ████ ██████           █████      ██                     ]],
--- 	[[      ███████████             █████                             ]],
--- 	[[      █████████ ███████████████████ ███   ███████████   ]],
--- 	[[     █████████  ███    █████████████ █████ ██████████████   ]],
--- 	[[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
--- 	[[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
--- 	[[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- 	[[                                                                       ]],
--- }
-
--- _Gopts = {
--- 	position = "center",
--- 	hl = "Type",
--- 	-- wrap = "overflow";
--- }
-
--- local function footer()
--- 	return "Haskell can suck mo' nads YUT YUT!!"
--- end
-
--- dashboard.section.footer.val = footer()
-
--- dashboard.opts.opts.noautocmd = true
--- alpha.setup(dashboard.opts)
