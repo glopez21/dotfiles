@@ -1,5 +1,24 @@
 return {
-    'nvim-lua/plenary.nvim',
+    'rmagatti/auto-session',
+    config = function()
+        require("auto-session").setup({
+            auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+            session_lens = {
+                buftypes_to_ignore = {}, -- list of buffer types what should not be deleted from current session
+                load_on_setup = true,
+                theme_conf = { border = true },
+                previewer = false,
+              },
+              vim.keymap.set("n", "<Leader>ls", require("auto-session.session-lens").search_session, {noremap = true,})
+        })
+    end,
+
+    
+}
+
+
+-- Another configuration setup
+-- 'nvim-lua/plenary.nvim',
     -- config = function()
     --     local Path = require('plenary.path')
 
@@ -19,7 +38,6 @@ return {
     --     max_path_length = 80,  -- Shorten the display path if length exceeds this threshold. Use 0 if don't want to shorten the path at all.
     --     })
     -- end
-}
 
 
 
