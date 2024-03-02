@@ -67,8 +67,8 @@ keymap(normal_mode, "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap(normal_mode, "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap(normal_mode, "<S-l>", ":bnext<CR>", opts)
-keymap(normal_mode, "<S-h>", ":bprevious<CR>", opts)
+keymap(normal_mode, "<leader>l", ":bnext<CR>", opts)
+keymap(normal_mode, "<leader>h", ":bprevious<CR>", opts)
 
 -- Toggle Word Wrap --
 keymap(normal_mode, "<leader>tw", ":set wrap!<CR>", opts)
